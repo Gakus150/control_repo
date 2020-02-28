@@ -1,6 +1,6 @@
 class profile::ssh_server {
         package {'openssh_server':
-                ensure => present,
+                ensure =>purge,
         }
         service {'sshd':
                 ensure => 'running',
